@@ -24,7 +24,7 @@ node {
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'admin', passwordVariable: 'Edt8Q~-Bm44pX5I-zAd-XsLRkf1_J-PjnvaPGduI', usernameVariable: '8efcefff-247a-4b09-8f1e-c794a829c230')]) {
        sh '''
-          az login --service-principal -u admin -p Edt8Q~-Bm44pX5I-zAd-XsLRkf1_J-PjnvaPGduI -t 32e2117d-6fa4-4496-a8f1-d476ba629d95
+          az login --service-principal -u 8efcefff-247a-4b09-8f1e-c794a829c230 -p Edt8Q~-Bm44pX5I-zAd-XsLRkf1_J-PjnvaPGduI -t 32e2117d-6fa4-4496-a8f1-d476ba629d95
           az account set -s 901fda41-8b6f-4d44-8582-c5929e78a528
         '''
       }
